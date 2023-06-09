@@ -1,0 +1,247 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Comme', sans-serif;    
+}
+
+@font-face {
+    font-family: "norsebold";
+    src:url("Norsebold.otf");
+    font-weight: bold;
+}
+
+.main {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(246, 246, 246);
+}
+
+
+.side-hero {
+    height:100vh;
+    width: 40vw;
+    background-image: url(../../Images/portrait02.jpg);
+    background-size: cover;
+    flex-grow:1;
+    color:white;
+    background-color: rgb(246, 246, 246);
+    position: relative;
+}
+
+.band {
+    height:110px;
+    background-color: rgba(0, 0, 0, 0.747);
+    opacity: 0.5;
+    width: 100%;
+    position: absolute;
+    top:30%;
+}
+
+.logo {
+    height:110px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    top:30%;
+}
+
+.logo img {
+    height: 90%;
+}
+
+.odin {
+    color:white;
+    font-size: 65px;
+    font-family: norsebold;
+}
+
+
+.side-hero p {
+    color:white;
+    font-size: .6rem;
+    position: absolute;
+    bottom: .05rem;
+    right: 1rem;
+}
+
+.side-hero a {
+    color: white;
+    }
+
+.side-hero a:visited {
+    color: white;
+}
+
+.side-hero a:hover {
+    color: white;
+}
+
+.side-hero a:active {
+    color: white;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    width:60vw;
+    padding:100px 0px;
+    justify-content: flex-start;
+    flex-grow:2;
+    background-color: rgb(246, 246, 246);
+}
+
+.content-intro {
+    padding: 0 160px 20px 20px;
+    line-height: 1.4em;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.content-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap:4px;
+    row-gap: 25px;
+    padding:30px 200px 30px 20px;
+    background-color: white;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width:200px;
+    height:2rem;
+    padding:.5rem;
+  }
+
+label {
+    text-transform: uppercase;
+    color:rgb(36, 36, 36);
+    font-size: .8rem;
+    margin-bottom:3px;
+}
+
+.footer {
+    height: 200px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.footer p {
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+button {
+    padding:.7rem 2.5rem;
+    color:white;
+    background-color: #7E3F1C;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border:none;
+    border-radius: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.footer p {
+    line-height: 2rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #7E3F1C;
+    font-weight: bold;
+}
+
+.footer a:visited {
+    text-decoration: none;
+    color: #7E3F1C;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #7E3F1C;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.footer a:active {
+    text-decoration: none;
+    color: #5E3F1C;
+    font-weight: bold;
+}
+
+
+
+.form-first-name::after,  
+.form-last-name::after {
+    content:"*5-12 characters, letters only";
+    color: #46220f;
+    font-size: .7rem;
+    margin-top: 3px;
+    margin-left: 5px;
+    width:194px;
+}
+
+.form-email::after {
+    content:"*Please enter a valid email address";
+    color: #46220f;
+    font-size: .7rem;
+    margin-top: 3px;
+    margin-left: 5px;
+    width:194px;
+}
+
+.form-phone::after {
+    content:"*Please enter a valid telephone number.";
+    color: #46220f;
+    font-size: .7rem;
+    margin-top: 3px;
+    margin-left: 5px;
+    width:194px;
+}
+
+.form-pword::after {
+    content:"*Passwords must contain at least 8 characters, including at least one letter, one number, and one symbol";
+    color: #46220f;
+    font-size: .7rem;
+    margin-top: 3px;
+    margin-left: 5px;
+    width:190px;
+}
+
+input:focus {
+    outline:rgb(85, 148, 230) 2px solid;
+    box-shadow: 3px 3px 4px gainsboro;
+    border:none;
+}
+
+
+input:invalid {
+    outline:rgb(218, 53, 53) 2px solid;
+    border:none;
+}
+
+/* :before and :after render inside a container. As input is a void element i.e. can not contain other elements, before and after will not work. */
+
+
