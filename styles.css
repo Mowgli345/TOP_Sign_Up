@@ -22,7 +22,7 @@
 .side-hero {
     height:100vh;
     width: 40vw;
-    background-image: url(../../Images/portrait02.jpg);
+    background-image: url(portrait02.jpg);
     background-size: cover;
     flex-grow:1;
     color:white;
